@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400;1,6..72,500&family=Spline+Sans+Mono:wght@400;500&display=swap" rel="stylesheet">
+</helmet>
+<x-import component-from-global-scope="deck-stage" from="./deck-stage.js" width="1920" height="1080" hint-size="100%,100%">
+
+<section data-label="Title" data-speaker-notes="A framework essay synthesizing insights from 44 practitioners across four countries. The through-line: what makes public programs actually deliver." style="box-sizing:border-box;width:1920px;height:1080px;background:#faf8f2;color:#211c14;font-family:'Newsreader',Georgia,serif;padding:150px 160px;display:flex;flex-direction:column;justify-content:center;">
+  <div style="font-family:'Spline Sans Mono',monospace;font-size:26px;letter-spacing:0.22em;text-transform:uppercase;color:#9c4a29;font-weight:500;margin-bottom:48px;">A Framework Essay</div>
+  <h1 style="margin:0;font-weight:500;font-size:150px;line-height:0.98;letter-spacing:-0.015em;">Beyond Fancy Planning</h1>
+  <p style="font-style:italic;font-size:52px;line-height:1.25;color:#4a4032;margin:44px 0 0;max-width:1300px;">What makes public programs actually deliver, and what happens when they don't.</p>
+  <div style="margin-top:64px;padding-top:40px;border-top:2px solid #211c14;max-width:1100px;font-size:32px;color:#5f5748;">Synthesizing insights from <strong style="font-weight:600;color:#211c14;">44 practitioners</strong> in program design and delivery, across four countries.</div>
+</section>
+
+<section data-label="Case One" data-speaker-notes="The failure case. A single public toilet in a San Francisco park, priced at 1.7 million dollars over a two-year timeline." style="box-sizing:border-box;width:1920px;height:1080px;background:#211c14;color:#faf8f2;font-family:'Newsreader',serif;padding:150px 160px;display:flex;flex-direction:column;justify-content:center;">
+  <div style="font-family:'Spline Sans Mono',monospace;font-size:26px;letter-spacing:0.22em;text-transform:uppercase;color:#d98a5f;font-weight:500;margin-bottom:44px;">Case One &nbsp;·&nbsp; The Failure</div>
+  <h1 style="margin:0;font-weight:500;font-size:140px;line-height:1.0;letter-spacing:-0.015em;">A $1.7 million toilet</h1>
+  <p style="font-style:italic;font-size:40px;line-height:1.35;color:#c9c0af;margin:52px 0 0;max-width:1250px;">The plumbing was already in the ground. The restroom had been in Noe Valley Town Square's site plan since 2016, postponed only for lack of funding.</p>
+</section>
+
+<section data-label="Stat: Toilet" data-speaker-notes="In October 2022 the state allocated 1.7 million dollars for one restroom, with a two-year build and a 2025 opening." style="box-sizing:border-box;width:1920px;height:1080px;background:#faf8f2;color:#211c14;font-family:'Newsreader',serif;padding:150px 160px;display:flex;flex-direction:column;justify-content:center;">
+  <p style="font-size:38px;line-height:1.5;color:#33291c;margin:0 0 60px;max-width:1300px;">In October 2022, the California Department of Parks and Recreation announced $1.7 million for a single restroom at Noe Valley Town Square. Projected timeline: two years. Projected opening: 2025.</p>
+  <div style="display:flex;gap:0;border-top:3px solid #211c14;border-bottom:3px solid #211c14;">
+    <div style="flex:1;padding:56px 30px;border-right:1px solid #cfc7b5;font-family:'Spline Sans Mono',monospace;"><div style="font-size:96px;font-weight:500;color:#9c4a29;line-height:1;">1</div><div style="font-size:28px;color:#5f5748;margin-top:20px;text-transform:uppercase;letter-spacing:0.1em;">toilet</div></div>
+    <div style="flex:1;padding:56px 30px;border-right:1px solid #cfc7b5;font-family:'Spline Sans Mono',monospace;"><div style="font-size:96px;font-weight:500;color:#9c4a29;line-height:1;">$1.7M</div><div style="font-size:28px;color:#5f5748;margin-top:20px;text-transform:uppercase;letter-spacing:0.1em;">estimate</div></div>
+    <div style="flex:1;padding:56px 30px;font-family:'Spline Sans Mono',monospace;"><div style="font-size:96px;font-weight:500;color:#9c4a29;line-height:1;">2 yrs</div><div style="font-size:28px;color:#5f5748;margin-top:20px;text-transform:uppercase;letter-spacing:0.1em;">to build</div></div>
+  </div>
+</section>
+
+<section data-label="Where money went" data-speaker-notes="Every line item was defensible on its own: custom design, PG&E demands, rising construction costs, living wages, and the standard planning-to-construction sequence. Together they made 1.7 million." style="box-sizing:border-box;width:1920px;height:1080px;background:#faf8f2;color:#211c14;font-family:'Newsreader',serif;padding:140px 160px;display:flex;flex-direction:column;justify-content:center;">
+  <h2 style="margin:0 0 56px;font-style:italic;font-weight:500;font-size:76px;line-height:1.1;">Where did the money go?</h2>
+  <div style="display:grid;grid-template-columns:1fr 1fr;column-gap:90px;row-gap:34px;max-width:1500px;font-size:34px;line-height:1.4;color:#2a2318;">
+    <div style="border-top:1px solid #cfc7b5;padding-top:26px;">Custom design and PG&amp;E infrastructure demands</div>
+    <div style="border-top:1px solid #cfc7b5;padding-top:26px;">Construction costs up 20–30% in two years</div>
+    <div style="border-top:1px solid #cfc7b5;padding-top:26px;">Living wages with benefits for workers</div>
+    <div style="border-top:1px solid #cfc7b5;padding-top:26px;">Planning, permitting, review, outreach, management</div>
+  </div>
+  <p style="font-size:38px;font-style:italic;color:#9c4a29;margin:64px 0 0;max-width:1300px;">Every one defensible on its own. Together: $1.7 million, two years — for one toilet.</p>
+</section>
+
+<section data-label="What went wrong" data-speaker-notes="The core problem wasn't any single step. Four things went wrong at the same time — the diagnosis this essay is built on." style="box-sizing:border-box;width:1920px;height:1080px;background:#faf8f2;color:#211c14;font-family:'Newsreader',serif;padding:120px 160px;display:flex;flex-direction:column;justify-content:center;">
+  <h2 style="margin:0 0 20px;font-style:italic;font-weight:500;font-size:72px;line-height:1.05;">What actually went wrong</h2>
+  <p style="font-size:32px;color:#5f5748;margin:0 0 50px;">Not one step. Four things failed at once.</p>
+  <div style="display:grid;grid-template-columns:1fr 1fr;column-gap:80px;row-gap:44px;">
+    <div><div style="font-family:'Spline Sans Mono',monospace;font-size:30px;color:#9c4a29;margin-bottom:16px;">01</div><div style="font-size:34px;line-height:1.4;color:#2a2318;"><strong style="font-weight:600;">Nobody defended what it was for.</strong> A line item on a work plan — and line items lose to process every time.</div></div>
+    <div><div style="font-family:'Spline Sans Mono',monospace;font-size:30px;color:#9c4a29;margin-bottom:16px;">02</div><div style="font-size:34px;line-height:1.4;color:#2a2318;"><strong style="font-weight:600;">Everyone had veto power. Nobody had championship.</strong> Too many parties, none with authority to move the work.</div></div>
+    <div><div style="font-family:'Spline Sans Mono',monospace;font-size:30px;color:#9c4a29;margin-bottom:16px;">03</div><div style="font-size:34px;line-height:1.4;color:#2a2318;"><strong style="font-weight:600;">Every value turned up, except time.</strong> Engagement, wages, transparency at maximum. Time turned to zero.</div></div>
+    <div><div style="font-family:'Spline Sans Mono',monospace;font-size:30px;color:#9c4a29;margin-bottom:16px;">04</div><div style="font-size:34px;line-height:1.4;color:#2a2318;"><strong style="font-weight:600;">Prevention systems prevented the work itself.</strong> Too many, all pointing at one project, with no way to say <em>enough</em>.</div></div>
+  </div>
+</section>
+
+<section data-label="Project vs program" data-speaker-notes="The toilet is a project, not a program. Those four failures are what happens when a project sits inside no program — each a symptom of missing scaffolding." style="box-sizing:border-box;width:1920px;height:1080px;background:#211c14;color:#faf8f2;font-family:'Newsreader',serif;padding:140px 160px;display:flex;flex-direction:column;justify-content:center;">
+  <p style="font-size:40px;line-height:1.4;color:#c9c0af;margin:0 0 60px;max-width:1300px;">The toilet is a <em style="color:#faf8f2;">project</em>, not a program. Each failure is a symptom of missing scaffolding.</p>
+  <div style="font-style:italic;font-size:44px;line-height:1.55;color:#faf8f2;max-width:1400px;">
+    <div style="padding:22px 0;border-top:1px solid #4a4234;">A program would have carried its purpose forward.</div>
+    <div style="padding:22px 0;border-top:1px solid #4a4234;">A program would have named an authority to move the work.</div>
+    <div style="padding:22px 0;border-top:1px solid #4a4234;">A program would have weighed time against the other values.</div>
+    <div style="padding:22px 0;border-top:1px solid #4a4234;border-bottom:1px solid #4a4234;">A program would have built delivery systems, not just prevention.</div>
+  </div>
+</section>
+
+<section data-label="Case Two" data-speaker-notes="The contrast. Colorado's Local IMPACT Accelerator — a program built the opposite way, from a different state." style="box-sizing:border-box;width:1920px;height:1080px;background:#faf8f2;color:#211c14;font-family:'Newsreader',serif;padding:150px 160px;display:flex;flex-direction:column;justify-content:center;">
+  <div style="font-family:'Spline Sans Mono',monospace;font-size:26px;letter-spacing:0.22em;text-transform:uppercase;color:#9c4a29;font-weight:500;margin-bottom:44px;">Case Two &nbsp;·&nbsp; The Contrast</div>
+  <h1 style="margin:0;font-weight:500;font-size:140px;line-height:1.0;letter-spacing:-0.015em;">A $21 million accelerator</h1>
+  <p style="font-style:italic;font-size:40px;line-height:1.35;color:#4a4032;margin:52px 0 0;max-width:1350px;">Colorado took $50M of an EPA climate grant and built the Local IMPACT Accelerator — passing funding down to cities, counties, and Tribal governments to adopt local climate policy.</p>
+</section>
+
+<section data-label="Stat: Colorado" data-speaker-notes="Colorado ran the first round in about seven months. By January 2026 it had awarded 21.6 million dollars to 17 projects — none of them glamorous." style="box-sizing:border-box;width:1920px;height:1080px;background:#faf8f2;color:#211c14;font-family:'Newsreader',serif;padding:150px 160px;display:flex;flex-direction:column;justify-content:center;">
+  <p style="font-size:38px;line-height:1.5;color:#33291c;margin:0 0 60px;max-width:1350px;">Fort Collins is adopting building performance standards. Winter Park is building a thermal energy network with net-zero bus stops. Adams County won $2M for renewable-energy land use.</p>
+  <div style="display:flex;gap:0;border-top:3px solid #211c14;border-bottom:3px solid #211c14;">
+    <div style="flex:1;padding:56px 30px;border-right:1px solid #cfc7b5;font-family:'Spline Sans Mono',monospace;"><div style="font-size:96px;font-weight:500;color:#9c4a29;line-height:1;">7 mo</div><div style="font-size:28px;color:#5f5748;margin-top:20px;text-transform:uppercase;letter-spacing:0.1em;">first round</div></div>
+    <div style="flex:1;padding:56px 30px;border-right:1px solid #cfc7b5;font-family:'Spline Sans Mono',monospace;"><div style="font-size:96px;font-weight:500;color:#9c4a29;line-height:1;">$21.6M</div><div style="font-size:28px;color:#5f5748;margin-top:20px;text-transform:uppercase;letter-spacing:0.1em;">awarded</div></div>
+    <div style="flex:1;padding:56px 30px;font-family:'Spline Sans Mono',monospace;"><div style="font-size:96px;font-weight:500;color:#9c4a29;line-height:1;">17</div><div style="font-size:28px;color:#5f5748;margin-top:20px;text-transform:uppercase;letter-spacing:0.1em;">projects</div></div>
+  </div>
+</section>
+
+<section data-label="Colorado choices" data-speaker-notes="Four deliberate design choices, made together — the mirror image of the toilet's four failures." style="box-sizing:border-box;width:1920px;height:1080px;background:#faf8f2;color:#211c14;font-family:'Newsreader',serif;padding:120px 160px;display:flex;flex-direction:column;justify-content:center;">
+  <h2 style="margin:0 0 50px;font-style:italic;font-weight:500;font-size:72px;line-height:1.05;">What Colorado did differently</h2>
+  <div style="display:grid;grid-template-columns:1fr 1fr;column-gap:80px;row-gap:44px;">
+    <div><div style="font-family:'Spline Sans Mono',monospace;font-size:30px;color:#9c4a29;margin-bottom:16px;">01</div><div style="font-size:34px;line-height:1.4;color:#2a2318;"><strong style="font-weight:600;">Four sectors, one product: adopted policy.</strong> Buildings, land, transport, waste. Ordinances you can count — not moonshots.</div></div>
+    <div><div style="font-family:'Spline Sans Mono',monospace;font-size:30px;color:#9c4a29;margin-bottom:16px;">02</div><div style="font-size:34px;line-height:1.4;color:#2a2318;"><strong style="font-weight:600;">Put the state in the middle, lowering barriers.</strong> Regional Coordinators help draft applications; Letters of Intent give an early signal.</div></div>
+    <div><div style="font-family:'Spline Sans Mono',monospace;font-size:30px;color:#9c4a29;margin-bottom:16px;">03</div><div style="font-size:34px;line-height:1.4;color:#2a2318;"><strong style="font-weight:600;">Cut the match for those least able to pay.</strong> Zero for low-income and Tribal governments, 5% for everyone else — said openly.</div></div>
+    <div><div style="font-family:'Spline Sans Mono',monospace;font-size:30px;color:#9c4a29;margin-bottom:16px;">04</div><div style="font-size:34px;line-height:1.4;color:#2a2318;"><strong style="font-weight:600;">Built delivery infrastructure into the program.</strong> The Coordinators and the Letter of Intent were systems, designed before the first application.</div></div>
+  </div>
+</section>
+
+<section data-label="The Pattern" data-speaker-notes="Over the past year I spent time with 44 practitioners across four countries, asking one question: what actually made your program work? Four things kept showing up." style="box-sizing:border-box;width:1920px;height:1080px;background:#211c14;color:#faf8f2;font-family:'Newsreader',serif;padding:150px 160px;display:flex;flex-direction:column;justify-content:center;">
+  <div style="font-family:'Spline Sans Mono',monospace;font-size:26px;letter-spacing:0.22em;text-transform:uppercase;color:#d98a5f;font-weight:500;margin-bottom:44px;">The Pattern</div>
+  <h1 style="margin:0;font-weight:500;font-size:104px;line-height:1.02;letter-spacing:-0.01em;max-width:1500px;">What every delivering program shares</h1>
+  <p style="font-style:italic;font-size:40px;line-height:1.35;color:#c9c0af;margin:52px 0 0;max-width:1400px;">44 practitioners. Four countries. One question — what actually made your program work? Four things kept showing up.</p>
+</section>
+
+<section data-label="The Four Ps" data-speaker-notes="Purpose, People, Priorities, Platform. The first three shape what the program tries to do; Platform is the foundation that lets them work." style="box-sizing:border-box;width:1920px;height:1080px;background:#faf8f2;color:#211c14;font-family:'Newsreader',serif;padding:110px 160px;display:flex;flex-direction:column;justify-content:center;">
+  <h2 style="margin:0 0 50px;font-family:'Spline Sans Mono',monospace;font-size:34px;letter-spacing:0.18em;text-transform:uppercase;color:#9c4a29;font-weight:500;">The Four Ps</h2>
+  <div style="display:grid;grid-template-columns:1fr 1fr;column-gap:100px;row-gap:52px;">
+    <div><div style="font-family:'Spline Sans Mono',monospace;font-size:40px;letter-spacing:0.06em;text-transform:uppercase;color:#211c14;font-weight:500;margin-bottom:18px;">Purpose</div><div style="font-size:34px;line-height:1.42;color:#4a4032;">A direction someone is willing to defend, even before the details are settled.</div></div>
+    <div><div style="font-family:'Spline Sans Mono',monospace;font-size:40px;letter-spacing:0.06em;text-transform:uppercase;color:#211c14;font-weight:500;margin-bottom:18px;">People</div><div style="font-size:34px;line-height:1.42;color:#4a4032;">The parties whose presence, engagement, and authority decide whether work moves.</div></div>
+    <div><div style="font-family:'Spline Sans Mono',monospace;font-size:40px;letter-spacing:0.06em;text-transform:uppercase;color:#211c14;font-weight:500;margin-bottom:18px;">Priorities</div><div style="font-size:34px;line-height:1.42;color:#4a4032;">The value choices about what the program will actually spend on — honestly reckoned.</div></div>
+    <div><div style="font-family:'Spline Sans Mono',monospace;font-size:40px;letter-spacing:0.06em;text-transform:uppercase;color:#211c14;font-weight:500;margin-bottom:18px;">Platform</div><div style="font-size:34px;line-height:1.42;color:#4a4032;">The infrastructure underneath that either lets the work happen or quietly ensures it doesn't.</div></div>
+  </div>
+</section>
+
+<section data-label="Narrative for change" data-speaker-notes="The aha: these are the same four things a lasting story carries — the ones a grandmother passes to her grandchildren. A program is a narrative for change." style="box-sizing:border-box;width:1920px;height:1080px;background:#9c4a29;color:#faf5ef;font-family:'Newsreader',serif;padding:150px 180px;display:flex;flex-direction:column;justify-content:center;">
+  <div style="font-family:'Spline Sans Mono',monospace;font-size:26px;letter-spacing:0.2em;text-transform:uppercase;color:#f2cbb4;font-weight:500;margin-bottom:50px;">The aha</div>
+  <p style="font-style:italic;font-weight:500;font-size:92px;line-height:1.14;margin:0;max-width:1500px;letter-spacing:-0.01em;">A program is a narrative for change.</p>
+  <p style="font-size:44px;line-height:1.4;margin:52px 0 0;max-width:1400px;color:#f7e3d7;">A story that moves a whole community to act, and to keep acting, for good. Look at what a lasting story carries, and you see the four again.</p>
+</section>
+
+<section data-label="The test" data-speaker-notes="So the framework is really a test. Show me your program's story — and answer four questions." style="box-sizing:border-box;width:1920px;height:1080px;background:#faf8f2;color:#211c14;font-family:'Newsreader',serif;padding:130px 160px;display:flex;flex-direction:column;justify-content:center;">
+  <p style="font-family:'Spline Sans Mono',monospace;font-size:30px;letter-spacing:0.12em;text-transform:uppercase;color:#9c4a29;margin:0 0 56px;">The framework is really a test</p>
+  <div style="border-left:5px solid #9c4a29;padding-left:56px;font-style:italic;font-size:60px;line-height:1.42;color:#2a2318;max-width:1400px;">
+    <div style="margin-bottom:30px;">Does it know what good it is for?</div>
+    <div style="margin-bottom:30px;">Does it hold the whole community?</div>
+    <div style="margin-bottom:30px;">Do its choices match its claims?</div>
+    <div>Will it survive the people who started it?</div>
+  </div>
+</section>
+
+<section data-label="Closing" data-speaker-notes="San Francisco missed all four. Colorado built for all four. Programs that deliver hold all four together. Next: Purpose." style="box-sizing:border-box;width:1920px;height:1080px;background:#211c14;color:#faf8f2;font-family:'Newsreader',serif;padding:140px 160px;display:flex;flex-direction:column;justify-content:center;">
+  <div style="display:flex;gap:70px;margin-bottom:70px;max-width:1500px;">
+    <div style="flex:1;padding-top:32px;border-top:2px solid #4a4234;"><div style="font-family:'Spline Sans Mono',monospace;font-size:28px;color:#d98a5f;margin-bottom:20px;">SAN FRANCISCO</div><div style="font-size:34px;line-height:1.4;color:#c9c0af;">$1.7M and two years for one toilet — because it missed all four.</div></div>
+    <div style="flex:1;padding-top:32px;border-top:2px solid #4a4234;"><div style="font-family:'Spline Sans Mono',monospace;font-size:28px;color:#d98a5f;margin-bottom:20px;">COLORADO</div><div style="font-size:34px;line-height:1.4;color:#c9c0af;">$21.6M to 17 projects in seven months — because it built for all four.</div></div>
+  </div>
+  <p style="font-size:40px;line-height:1.4;color:#faf8f2;margin:0 0 64px;max-width:1450px;">Programs that actually deliver hold all four together. The practitioners will do the teaching.</p>
+  <div style="font-style:italic;font-weight:500;font-size:76px;color:#d98a5f;">Let's start with Purpose.</div>
+</section>
+
+</x-import>
+</x-dc>
+</body>
+</html>
