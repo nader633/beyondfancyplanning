@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400&family=Spline+Sans+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  body{margin:0;background:#efe3cd;color:#221d13;font-family:'Newsreader',Georgia,serif;-webkit-font-smoothing:antialiased;}
+  a{color:#6b2f14;}
+  a:hover{color:#9c4a29;}
+  .pcard a:hover{color:#9c4a29;}
+</style>
+<script src="./image-slot.js"></script>
+</helmet>
+
+<!-- HERO -->
+<section style="min-height:64vh;box-sizing:border-box;display:flex;flex-direction:column;justify-content:center;padding:11vh 8vw 8vh;background:url('assets/marble-warm.png') center/cover no-repeat;">
+  <a href="./Beyond%20Fancy%20Planning%20Web.dc.html" style="align-self:flex-start;display:flex;align-items:center;gap:10px;background:#ffc800;color:#3a2308;font-family:'Spline Sans Mono',monospace;font-size:13px;letter-spacing:0.14em;text-transform:uppercase;text-decoration:none;padding:14px 24px;border-radius:999px;box-shadow:0 1px 12px rgba(36,23,12,0.14);margin-bottom:38px;" style-hover="background:#e6b31e;"><span style="font-size:15px;line-height:1;">←</span> Back to Beyond Fancy Planning</a>
+  <div style="font-family:'Spline Sans Mono',monospace;font-size:14px;letter-spacing:0.26em;text-transform:uppercase;color:#6b2f14;font-weight:500;margin-bottom:22px;">The Practitioners</div>
+  <h1 style="margin:0;font-weight:500;font-size:clamp(44px,8vw,104px);line-height:0.98;letter-spacing:-0.02em;color:#1c130c;max-width:16ch;">Who taught the pattern</h1>
+  <p style="max-width:620px;font-style:italic;font-size:clamp(19px,2.4vw,28px);line-height:1.32;color:#4a3a28;margin:32px 0 0;">The people who design, run, and evaluate public programs, grouped by the P their work speaks to most. Those who asked to stay anonymous are not shown.</p>
+</section>
+
+<!-- PURPOSE -->
+<section style="padding:11vh 8vw 3vh;">
+  <div style="display:flex;align-items:center;gap:22px;border-top:2px solid #221d13;padding-top:26px;margin-bottom:46px;">
+    <div style="flex:none;width:92px;height:92px;border-radius:50%;background:#faf6ec;display:flex;align-items:center;justify-content:center;"><img src="assets/mark-purpose.png" alt="" style="width:78px;height:auto;"></div>
+    <div><div style="font-family:'Spline Sans Mono',monospace;font-size:16px;letter-spacing:0.14em;text-transform:uppercase;color:#6b2f14;">Purpose</div><div style="font-size:19px;color:#4a3a28;font-style:italic;margin-top:4px;">A direction worth defending.</div></div>
+  </div>
+  <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(190px,1fr));gap:46px 24px;">
+    <sc-for list="{{ purpose }}" as="p" hint-placeholder-count="7">
+      <div class="pcard" style="display:flex;flex-direction:column;align-items:center;text-align:center;">
+        <image-slot id="ph-{{ p.s }}" shape="circle" style="width:118px;height:118px;filter:grayscale(100%);border:none;background:transparent;" placeholder="{{ p.n }}"></image-slot>
+        <a href="{{ p.u }}" target="_blank" rel="noopener" style="margin-top:14px;font-family:'Newsreader',serif;font-size:18px;font-weight:600;color:#221d13;text-decoration:none;line-height:1.2;">{{ p.n }}</a>
+        <div style="font-size:12.5px;line-height:1.4;color:#6b5f4c;margin-top:5px;max-width:24ch;">{{ p.a }}</div>
+      </div>
+    </sc-for>
+    <sc-for list="{{ purposeAnon }}" as="a" hint-placeholder-count="3">
+      <div class="pcard" style="display:flex;flex-direction:column;align-items:center;text-align:center;">
+        <div style="width:118px;height:118px;border-radius:50%;overflow:hidden;"><img src="assets/anon-silhouette.png" alt="" style="width:100%;height:100%;object-fit:cover;filter:grayscale(100%);"></div>
+        <div style="margin-top:14px;font-family:'Newsreader',serif;font-size:15px;font-style:italic;color:#4a3a28;line-height:1.3;max-width:24ch;">{{ a.d }}</div>
+        <div style="font-family:'Spline Sans Mono',monospace;font-size:10px;letter-spacing:0.12em;text-transform:uppercase;color:#8a7c62;margin-top:6px;">Anonymous</div>
+      </div>
+    </sc-for>
+  </div>
+</section>
+
+<!-- PEOPLE -->
+<section style="padding:7vh 8vw 3vh;">
+  <div style="display:flex;align-items:center;gap:22px;border-top:2px solid #221d13;padding-top:26px;margin-bottom:46px;">
+    <div style="flex:none;width:92px;height:92px;border-radius:50%;background:#faf6ec;display:flex;align-items:center;justify-content:center;"><img src="assets/mark-people.png" alt="" style="width:78px;height:auto;"></div>
+    <div><div style="font-family:'Spline Sans Mono',monospace;font-size:16px;letter-spacing:0.14em;text-transform:uppercase;color:#3d6512;">People</div><div style="font-size:19px;color:#4a3a28;font-style:italic;margin-top:4px;">Whose presence and authority move the work.</div></div>
+  </div>
+  <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(190px,1fr));gap:46px 24px;">
+    <sc-for list="{{ people }}" as="p" hint-placeholder-count="12">
+      <div class="pcard" style="display:flex;flex-direction:column;align-items:center;text-align:center;">
+        <image-slot id="ph-{{ p.s }}" shape="circle" style="width:118px;height:118px;filter:grayscale(100%);border:none;background:transparent;" placeholder="{{ p.n }}"></image-slot>
+        <a href="{{ p.u }}" target="_blank" rel="noopener" style="margin-top:14px;font-family:'Newsreader',serif;font-size:18px;font-weight:600;color:#221d13;text-decoration:none;line-height:1.2;">{{ p.n }}</a>
+        <div style="font-size:12.5px;line-height:1.4;color:#6b5f4c;margin-top:5px;max-width:24ch;">{{ p.a }}</div>
+      </div>
+    </sc-for>
+    <sc-for list="{{ peopleAnon }}" as="a" hint-placeholder-count="2">
+      <div class="pcard" style="display:flex;flex-direction:column;align-items:center;text-align:center;">
+        <div style="width:118px;height:118px;border-radius:50%;overflow:hidden;"><img src="assets/anon-silhouette.png" alt="" style="width:100%;height:100%;object-fit:cover;filter:grayscale(100%);"></div>
+        <div style="margin-top:14px;font-family:'Newsreader',serif;font-size:15px;font-style:italic;color:#4a3a28;line-height:1.3;max-width:24ch;">{{ a.d }}</div>
+        <div style="font-family:'Spline Sans Mono',monospace;font-size:10px;letter-spacing:0.12em;text-transform:uppercase;color:#8a7c62;margin-top:6px;">Anonymous</div>
+      </div>
+    </sc-for>
+  </div>
+</section>
+
+<!-- PRIORITIES -->
+<section style="padding:7vh 8vw 3vh;">
+  <div style="display:flex;align-items:center;gap:22px;border-top:2px solid #221d13;padding-top:26px;margin-bottom:46px;">
+    <div style="flex:none;width:92px;height:92px;border-radius:50%;background:#faf6ec;display:flex;align-items:center;justify-content:center;"><img src="assets/mark-priorities.png" alt="" style="width:78px;height:auto;"></div>
+    <div><div style="font-family:'Spline Sans Mono',monospace;font-size:16px;letter-spacing:0.14em;text-transform:uppercase;color:#bf5a2b;">Priorities</div><div style="font-size:19px;color:#4a3a28;font-style:italic;margin-top:4px;">What the program actually spends on.</div></div>
+  </div>
+  <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(190px,1fr));gap:46px 24px;">
+    <sc-for list="{{ priorities }}" as="p" hint-placeholder-count="7">
+      <div class="pcard" style="display:flex;flex-direction:column;align-items:center;text-align:center;">
+        <image-slot id="ph-{{ p.s }}" shape="circle" style="width:118px;height:118px;filter:grayscale(100%);border:none;background:transparent;" placeholder="{{ p.n }}"></image-slot>
+        <a href="{{ p.u }}" target="_blank" rel="noopener" style="margin-top:14px;font-family:'Newsreader',serif;font-size:18px;font-weight:600;color:#221d13;text-decoration:none;line-height:1.2;">{{ p.n }}</a>
+        <div style="font-size:12.5px;line-height:1.4;color:#6b5f4c;margin-top:5px;max-width:24ch;">{{ p.a }}</div>
+      </div>
+    </sc-for>
+    <sc-for list="{{ prioritiesAnon }}" as="a" hint-placeholder-count="1">
+      <div class="pcard" style="display:flex;flex-direction:column;align-items:center;text-align:center;">
+        <div style="width:118px;height:118px;border-radius:50%;overflow:hidden;"><img src="assets/anon-silhouette.png" alt="" style="width:100%;height:100%;object-fit:cover;filter:grayscale(100%);"></div>
+        <div style="margin-top:14px;font-family:'Newsreader',serif;font-size:15px;font-style:italic;color:#4a3a28;line-height:1.3;max-width:24ch;">{{ a.d }}</div>
+        <div style="font-family:'Spline Sans Mono',monospace;font-size:10px;letter-spacing:0.12em;text-transform:uppercase;color:#8a7c62;margin-top:6px;">Anonymous</div>
+      </div>
+    </sc-for>
+  </div>
+</section>
+
+<!-- PLATFORM -->
+<section style="padding:7vh 8vw 12vh;">
+  <div style="display:flex;align-items:center;gap:22px;border-top:2px solid #221d13;padding-top:26px;margin-bottom:46px;">
+    <div style="flex:none;width:92px;height:92px;border-radius:50%;background:#faf6ec;display:flex;align-items:center;justify-content:center;"><img src="assets/mark-platform-light.png" alt="" style="width:78px;height:auto;"></div>
+    <div><div style="font-family:'Spline Sans Mono',monospace;font-size:16px;letter-spacing:0.14em;text-transform:uppercase;color:#8a6a1e;">Platform</div><div style="font-size:19px;color:#4a3a28;font-style:italic;margin-top:4px;">The infrastructure underneath.</div></div>
+  </div>
+  <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(190px,1fr));gap:46px 24px;">
+    <sc-for list="{{ platform }}" as="p" hint-placeholder-count="9">
+      <div class="pcard" style="display:flex;flex-direction:column;align-items:center;text-align:center;">
+        <image-slot id="ph-{{ p.s }}" shape="circle" style="width:118px;height:118px;filter:grayscale(100%);border:none;background:transparent;" placeholder="{{ p.n }}"></image-slot>
+        <a href="{{ p.u }}" target="_blank" rel="noopener" style="margin-top:14px;font-family:'Newsreader',serif;font-size:18px;font-weight:600;color:#221d13;text-decoration:none;line-height:1.2;">{{ p.n }}</a>
+        <div style="font-size:12.5px;line-height:1.4;color:#6b5f4c;margin-top:5px;max-width:24ch;">{{ p.a }}</div>
+      </div>
+    </sc-for>
+    <sc-for list="{{ platformAnon }}" as="a" hint-placeholder-count="3">
+      <div class="pcard" style="display:flex;flex-direction:column;align-items:center;text-align:center;">
+        <div style="width:118px;height:118px;border-radius:50%;overflow:hidden;"><img src="assets/anon-silhouette.png" alt="" style="width:100%;height:100%;object-fit:cover;filter:grayscale(100%);"></div>
+        <div style="margin-top:14px;font-family:'Newsreader',serif;font-size:15px;font-style:italic;color:#4a3a28;line-height:1.3;max-width:24ch;">{{ a.d }}</div>
+        <div style="font-family:'Spline Sans Mono',monospace;font-size:10px;letter-spacing:0.12em;text-transform:uppercase;color:#8a7c62;margin-top:6px;">Anonymous</div>
+      </div>
+    </sc-for>
+  </div>
+  <div style="margin-top:9vh;padding-top:34px;border-top:2px solid #221d13;display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:26px;">
+    <div style="font-family:'Spline Sans Mono',monospace;font-size:13px;letter-spacing:0.06em;color:#6b5f4c;max-width:44ch;line-height:1.6;">Drop each person's headshot into its circle. Every photo renders in black &amp; white.</div>
+    <a href="./Beyond%20Fancy%20Planning%20Web.dc.html" style="display:flex;align-items:center;gap:10px;background:#ffc800;color:#3a2308;font-family:'Spline Sans Mono',monospace;font-size:14px;letter-spacing:0.14em;text-transform:uppercase;text-decoration:none;padding:17px 30px;border-radius:999px;box-shadow:0 1px 12px rgba(36,23,12,0.14);" style-hover="background:#e6b31e;"><span style="font-size:16px;line-height:1;">←</span> Back to Beyond Fancy Planning</a>
+  </div>
+</section>
+</x-dc>
+<script type="text/x-dc" data-dc-script>
+class Component extends DCLogic {
+  renderVals() {
+    return {
+      purpose: [
+        {n:'Ken Alex',a:'Director, Project Climate, UC Berkeley CLEE',u:'https://www.linkedin.com/in/ken-alex-48556617a/',s:'alex'},
+        {n:'Jessie Buendia',a:'Chief Impact Officer, Coalition for Green Capital',u:'https://www.linkedin.com/in/jessicabuendia/',s:'buendia'},
+        {n:"Mollie Cohen D'Agostino",a:'Founding & Executive Director, MoSAIC, UC Davis ITS',u:'https://www.linkedin.com/in/mollie-cr-d-agostino/',s:'dagostino'},
+        {n:'Michael Comninos',a:'Partner & Director, Astrolabe Group',u:'https://www.linkedin.com/in/michael-comninos-a6071730/',s:'comninos'},
+        {n:'Sean Kennedy',a:'Deputy Director, Energy & Investments, California SGC',u:'https://www.linkedin.com/in/seanfkennedy27/',s:'kennedy'},
+        {n:'Natasha Udu-gama',a:'Director, Thriving Earth Exchange, AGU',u:'https://www.linkedin.com/in/natasha-u-3a096b3/',s:'udugama'},
+        {n:'Jamil Wyne',a:'Founder, Hazelwood Network',u:'https://www.linkedin.com/in/jamilwyne/',s:'wyne'}
+      ],
+      people: [
+        {n:'Sam Assefa',a:'Director, California LCI',u:'https://www.linkedin.com/in/samassefa/',s:'assefa'},
+        {n:'Jeb Brugmann',a:'Founding Principal, Resilient Cities Catalyst',u:'https://www.linkedin.com/in/jebbrugmann/',s:'brugmann'},
+        {n:'Ethan Elkind',a:'Director, Climate Program, UC Berkeley CLEE',u:'https://www.linkedin.com/in/ethan-elkind-49664b6/',s:'elkind'},
+        {n:'Jessie Hammerling',a:'Co-Director, Green Economy Program, UC Berkeley Labor Center',u:'https://laborcenter.berkeley.edu/people/jessie-hf-hammerling',s:'hammerling'},
+        {n:'Tim Male',a:'Founder & Executive Director, Environmental Policy Innovation Center',u:'https://www.linkedin.com/in/timothymale/',s:'male'},
+        {n:'Mara Mintzer',a:'Co-Founder & Executive Director, Growing Up Boulder',u:'https://www.linkedin.com/in/mara-mintzer-31493439/',s:'mintzer'},
+        {n:'Lisa Patel',a:'Executive Director, Medical Society Consortium on Climate & Health',u:'https://www.linkedin.com/in/lisa-patel-md-climate-health',s:'patel'},
+        {n:'Joaquin Rodriguez Alvarez',a:'CEO, Afkar Collective; Adjunct Professor, UAB',u:'https://www.linkedin.com/in/joaquimrodriguez/',s:'rodriguez'},
+        {n:'Ann Rogan',a:'Founder & CEO, Edge Collaborative',u:'https://www.linkedin.com/in/annrogan',s:'rogan'},
+        {n:'Evan Schmidt',a:'CEO, Valley Vision',u:'https://www.linkedin.com/in/evan-e-schmidt',s:'schmidt'},
+        {n:'Abby Snay',a:'Deputy Secretary for Workforce Strategy, CA LWDA',u:'https://www.linkedin.com/in/abbysnay/',s:'snay'},
+        {n:'Gia Brazil Vacin',a:'Deputy Director, ZEV Market Development, GO-Biz',u:'https://business.ca.gov/about/go-biz-team-page/',s:'vacin'}
+      ],
+      priorities: [
+        {n:'Danielle Blacet-Hyden',a:'Executive Director, California Municipal Utilities Association',u:'https://www.linkedin.com/in/danielle-blacet-hyden-a4886214/',s:'blacet'},
+        {n:'Lia Cohen',a:'Manager, Climate Planning & Resilience, Climate Resolve',u:'https://www.linkedin.com/in/lia-cohen-129983163/',s:'lcohen'},
+        {n:'Jane Gilbert',a:'Former Chief Heat Officer, Miami-Dade County',u:'https://www.linkedin.com/in/janegilbert1',s:'gilbert'},
+        {n:'Amir Hajrasouliha',a:'Department Head, City & Regional Planning, Cal Poly SLO',u:'https://www.linkedin.com/in/amir-hajrasouliha-24a9073a/',s:'amir'},
+        {n:'Jefferey Marino',a:'Director, California Office of Data and Innovation',u:'https://innovation.ca.gov/who-we-are/meet-the-team/',s:'marino'},
+        {n:'David Shabazian',a:'Former Director, California Department of Conservation',u:'https://www.linkedin.com/in/shabazian-david-1447265/',s:'shabazian'},
+        {n:'Kate Wright',a:'Executive Director, Climate Mayors',u:'https://www.linkedin.com/in/katemeiswright/',s:'wright'}
+      ],
+      platform: [
+        {n:'Kate Gordon',a:'CEO, California Forward',u:'https://www.linkedin.com/in/kategordonconsulting',s:'gordon'},
+        {n:'Stephanie Gripne',a:'Founder & CEO, Impact Finance Center',u:'https://www.linkedin.com/in/gripne/',s:'gripne'},
+        {n:'Emory Lee',a:'Climate Adaptation & Resilience Lead, Ramboll',u:'https://www.linkedin.com/in/emorygracelee83',s:'lee'},
+        {n:'Kacey Lizon',a:'Deputy Executive Director of Planning & Programs, SACOG',u:'https://www.linkedin.com/in/kaceylizon',s:'lizon'},
+        {n:'Julianne McCall',a:'CEO, California Council on Science & Technology',u:'https://www.linkedin.com/in/julianne-mccall-a6a77051/',s:'mccall'},
+        {n:'Ben Metcalf',a:'Managing Director, Terner Center for Housing Innovation, UC Berkeley',u:'https://www.linkedin.com/in/btmetcalf/',s:'metcalf'},
+        {n:'Hoi-Fei Mok',a:'Deputy Director, Equity & Government Transformation, California SGC',u:'https://www.linkedin.com/in/hoifeimok',s:'mok'},
+        {n:'Teddie Pierce',a:'Independent HMIS Consultant, Decipher HMIS',u:'https://www.linkedin.com/in/teddie-pierce-8b4345/',s:'pierce'},
+        {n:'Ketevan Vashakidze',a:'President, Europe Foundation; ED, UNITAR CIFAL Tbilisi',u:'https://www.linkedin.com/in/ketevan-vashakidze-kv/',s:'vashakidze'}
+      ],
+      purposeAnon: [
+        {d:'A senior policy lead at a US state housing department'},
+        {d:'A director at a university-based impact research institute'},
+        {d:'A community development director in a US city'}
+      ],
+      peopleAnon: [
+        {d:'A senior researcher at a US health-systems organization'},
+        {d:'A senior planning director at a US state transportation department'}
+      ],
+      prioritiesAnon: [
+        {d:'A former city innovation lead, now at a national policy organization'}
+      ],
+      platformAnon: [
+        {d:'Director of a climate & energy policy program at a US research university'},
+        {d:'Director of a program in environmental policy at a US public research university'},
+        {d:'A research & advocacy lead at a major humanitarian organization'}
+      ]
+    };
+  }
+}
+</script>
+</body>
+</html>
